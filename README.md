@@ -1,16 +1,9 @@
-# Cointegerated-Trading-Model-Nifty-vs-BankNifty
+# Customized Nifty Trading Model with Indicators
 
-In financial markets and in the real world, there are time series which are cointegrated. In general terms if two time series are ‘cointegrated’ then it means, that the two time-series move together and if at all there is a deviation from this movement, it is either temporary or can be attributed to a stray event, and one can expect the two time-series to revert to its regular orbit i.e. converge and move together again. This type of time series is exactly what we want to find in financial markets.
+As of 2021, there are 20 Million traders in India who trade actively on Nifty and Bank Nifty Index. Though this number is very small when compared to the population of India but the number of people opening trading accounts every month is on a all time high and this number is expected to increase rapidly over the next coming years as India is on a high growth trajectory.
 
-So, in this project I will try and find this cointegrated relationship between Nifty Index and Bank Nifty Index.
+Every trader has it's own principles, targets, stop losses and indicators to buy and sell stocks. Majority of the people let their emotions make trade for them. But there are still traders who are strict with their trading rules and they buy/sell strictly according to those indicators. You might have read about RSI index (when the stocks are over bought and over sold) , MACD Crossover indicators, Moving Averages and others. But do we know which indicators have given the best returns over the last 6-7 years? Are you confident about which indicator to stick with? Are there any combination of indicators which can give even better returns than the tried and test RSI and MACD? Did these indicators worked during the pandemic too? Well, these are the questions i'll try to solve in this project.
 
-To find a cointegrated time series we will try different regression techniques and select the most accurate technique which works on our data. Regression in basic terms comes with the relationship between Independent variable X and dependent variable Y. That relationship is described in terms of slope. so, slope captures how much Y would change with change in X.
+The motive of this project is to make my own customized model based on purely historical data from which I can initiate trades with more confidence and informed decisions. Obviously there will be exceptions like the covid pandemic which led to market crumbling down to multiple years low and then making a new all time high in the same year. 
 
-Once we get a relationship then we will use that relationship to predict the value of Y from X. But more often regression techniques has a hard time predicting dependent variables properly. so, we are not going to use regression predictions to directly make trades.
-
-Instead of focusing on predictions from the regression model we will going to focus on errors made by the model, also known as residuals. We will check whether the residuals of a model are stationary, the mean and variance of residuals is in tight range and autocorrelation of residuals is close to 0. This means a residual time series is stationary.
-
-Stationarity of residuals confirms that two stocks are cointegrated. They move closely together and if at all some deviation happens that's temporary, they will converge back. 
-
-We will make trades based on Adfuller test results and with the help of some manual features. We will set trigger prices, targets, stoploss and square-off's.
-Finally we will check the results of our model by checking the Profits made by our trades on test data.
+Let's jump right into the project and try to find answers to all the above questions!!
