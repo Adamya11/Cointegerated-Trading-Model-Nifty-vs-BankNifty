@@ -1,4 +1,4 @@
-# Trading Models Nifty with best Indicators
+# Trading Models Nifty with Technical Indicators
 
 As of 2021, there are 20 Million traders in India who trade actively on Nifty and Bank Nifty Index. Though this number is very small when compared to the population of India but the number of people opening trading accounts every month is on a all time high and this number is expected to increase rapidly over the next coming years as India is on a high growth trajectory.
 
